@@ -1,4 +1,4 @@
-# A-pipeline-to-enhance-animal-vehicle-collision-analysis-in-crash-report-dataset
+# Animal-Vehicle Collision (AVC) Analysis Pipeline
 
 This repository contains the code and resources for the research paper:
 
@@ -8,18 +8,22 @@ Department of Civil Engineering, University of North Dakota
 
 ## Overview
 
-This project introduces a comprehensive pipeline for analyzing crash report datasets related to animal-vehicle collisions (AVCs). The pipeline includes steps for:
+Animal-vehicle collisions (AVCs) represent a significant challenge globally, leading to road safety concerns, ecological disruptions, and substantial property damage. Police crash reports are a primary data source for studying AVCs, but these datasets are often plagued by inconsistencies, missing information, and poor-quality data due to variations in reporting policies, especially in rural areas. To address these issues, this repository provides a robust pipeline that:
 
-1. **Data Cleaning**: Removing outliers, duplicates, irrelevant features, and addressing missing values.
-2. **Data Quality Control**: Ensuring temporal and spatial consistency within the dataset.
-3. **Feature Selection**: Identifying statistically significant features using variance thresholds, Theil's U association index, and Chi-square tests.
-4. **Contributing Factor Analysis**: Highlighting features crucial for predictive modeling.
+1. **Prepares and Cleans Data**: Outlier detection, duplicate removal, and skewed sample proportion adjustments ensure the dataset’s reliability.
+2. **Ensures Data Quality**: Implements temporal and spatial checks to identify inconsistencies stemming from reporting policy changes or other factors.
+3. **Selects Features Strategically**: Uses advanced statistical tools like Theil’s U association index, Chi-square tests, and variance thresholding to retain only the most informative features.
+4. **Analyzes Contributing Factors**: Identifies and ranks the most significant factors impacting AVCs, such as light conditions, speed limits, and temporal patterns.
 
-The pipeline was applied to North Dakota crash report data, improving dataset integrity, runtime efficiency, and predictive analysis reliability.
+This pipeline was applied to crash report data from North Dakota, where AVCs are particularly prevalent due to the region's diverse wildlife and extensive rural road networks. The pipeline achieved:
+
+- A 3.95% reduction in sample size and an 88.9% reduction in feature size.
+- Improved runtime efficiency for association analysis by 92.46%.
+- Enhanced integrity and spatiotemporal alignment of the dataset, enabling more accurate predictive modeling and analysis.
 
 ---
 
-## Features
+## Pipeline
 
 - **Data Preprocessing**:
   - Outlier detection and removal.
@@ -44,11 +48,8 @@ The pipeline was applied to North Dakota crash report data, improving dataset in
 
 ```plaintext
 .
-├── code/                  # Contains the Python code for the pipeline
-├── data/                  # Sample data (optional; anonymized if included)
-├── figures/               # Visualizations and figures from the analysis
-├── README.md              # Project overview (this file)
-└── LICENSE                # Licensing information
+├── code/      # Contains the Python code for the pipeline
+├── README.md  # Project overview (this file)
 ```
 
 ---
@@ -92,7 +93,7 @@ pip install pandas numpy tqdm matplotlib scikit-learn dython openpyxl
 
 ## Dataset
 
-The dataset used in this study includes crash reports from North Dakota (2005–2023). Ensure that your dataset aligns with the preprocessing requirements outlined in the code.
+The dataset used in this study includes crash reports from North Dakota (2005–2023). These data are provided by the North Dakota Department of Transportation (NDDOT). The authors of this study do not have the right to publish or share the dataset publicly. Any use of similar data must adhere to the terms and conditions set by the NDDOT. Ensure that your dataset aligns with the preprocessing requirements outlined in the code.
 
 ---
 
@@ -114,7 +115,3 @@ Boshra Besharatian, Sattar Dorafshan, "A Pipeline to Enhance Animal Vehicle Coll
 ```
 
 ---
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
