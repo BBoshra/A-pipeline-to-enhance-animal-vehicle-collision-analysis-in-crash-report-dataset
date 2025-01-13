@@ -48,8 +48,9 @@ This pipeline was applied to crash report data from North Dakota, where AVCs are
 
 ```plaintext
 .
-├── code/      # Contains the Python code for the pipeline
-├── README.md  # Project overview (this file)
+├── code/        # Contains the Python code for the pipeline
+├── requirement/  # A list of required Python packages
+├── README.md    # Project overview (this file)
 ```
 
 ---
