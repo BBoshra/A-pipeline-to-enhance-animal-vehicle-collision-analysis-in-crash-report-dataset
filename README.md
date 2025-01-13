@@ -54,28 +54,6 @@ This pipeline was applied to crash report data from North Dakota, where AVCs are
 
 ---
 
-## Requirements
-
-### Python Packages
-
-The following Python packages are required to run the pipeline:
-
-- `pandas`
-- `numpy`
-- `tqdm`
-- `matplotlib`
-- `sklearn` (scikit-learn)
-- `dython`
-- `openpyxl`
-
-Install them using:
-
-```bash
-pip install pandas numpy tqdm matplotlib scikit-learn dython openpyxl
-```
-
----
-
 ## Usage
 
 1. Clone the repository:
